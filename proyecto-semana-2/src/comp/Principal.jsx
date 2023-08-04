@@ -1,11 +1,22 @@
-import './App.css'
-import Productos from './Productos';
+import React from "react";
+import Productos from "./Productos.jsx";
 
-function Principal() {
+
+const Principal = () => {
     return (
-        <div className="">
-        <Productos nombre="Horacio"/>
-        <Productos precio="100"/>
+        <div className="Product">
+            <Productos nombre="Caña pesca"
+                imgUrl="https://media.istockphoto.com/id/622314118/es/foto/equipo-de-pesca.jpg?s=612x612&w=0&k=20&c=raTn3n4D7lQJP9wvodqsK0EKRwqd4lbunQc928-Jihc="
+                precio="$100" />
+
+            <Productos nombre="Señuelos de pesca"
+                imgUrl="https://media.istockphoto.com/id/1096137862/es/foto/se%C3%B1uelos-de-la-pesca.jpg?s=612x612&w=0&k=20&c=6h7oeBBH_KTZ9YvqCzZRPaGtcJbm5vcYuoYk8rzUOl0="
+                precio="$10" />
+
+            <Productos nombre="Reel"
+                imgUrl="https://media.istockphoto.com/id/1359706480/es/foto/bobina-para-pescar-color-azul-inercial-sobre-aislado-de-primer-plano-de-fondo-blanco.jpg?s=612x612&w=0&k=20&c=ujsUu_XdC8BXZchRhe07nsayxUILmVPNv5D2gdFz3Zc="
+                precio="$50" />
+
         </div>
     )
 };
